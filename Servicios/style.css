@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,800;1,800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+}
+
+.header{
+    background-color: #0F5757;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10px;
+}
+
+
+.header .logo{
+    cursor: pointer;
+}
+.header .logo img{
+height: 70px;
+width: auto;
+transition: all 0.3s;
+}
+
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links a{
+    font-size: 700;
+    text-decoration: none;
+    color: white;
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background: black;
+    border-radius: 10px;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+.header .btn button{
+    font-weight: 700;
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover{
+    background-color: black;
+    color: azure;
+    transform: scale(1.1);
+}
+
+.services-container {
+    padding: 50px;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 32px;
+    color:black;
+    margin-bottom: 30px;
+  }
+  
+  .service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-title {
+    color:black;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .service-description {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .footer {
+    background-color: #0F5757;
+    color:rgb(241, 241, 241);
+    padding: 40px 20px 10px;
+    font-size: 16px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-bottom: 2px solid #e8e8e8;
+    padding-bottom: 5px;
+  }
+  
+  .footer-section p, .footer-section a {
+    color: rgb(241, 241, 241);
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid white;
+    padding-top: 10px;
+  }
+
+  .footer .footer-section .footer-section .links li:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background: #e8e8e8;
+    border-radius: 10px;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+}
+
+#contactModal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  max-width: 400px;
+  width: 90%;
+}
+
+#contactModal h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+#contactModal p {
+  margin-bottom: 15px;
+}
+
+#modalOverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}

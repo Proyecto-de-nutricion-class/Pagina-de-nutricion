@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALIMENTACION NUTRITIVA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    
+    <header class="header">
+        <div class="logo">
+            <img src="../img/logo.png" alt="logo de la udg">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="file:///C:/Users/josel/OneDrive/Escritorio/Proyecto%20de%20Graficos/opcion1/index.html" target="_self">INICIO</a></li>
+                <li><a href="file:///C:/Users/josel/OneDrive/Escritorio/Proyecto%20de%20Graficos/Servicios/index.html" target="_self">SERVICIOS</a></li>
+                <li><a href="file:///C:/Users/josel/OneDrive/Escritorio/Proyecto%20de%20Graficos/Calculadora/index.html" target="_self">CALCULADORA</a></li>
+            </ul>
+        </nav>
+        <a href="" class="btn" id="contactLink"><button>Contacto</button></a>
+
+        <div id="modalOverlay"></div>
+    
+    <div id="contactModal">
+            <h2>Información de Contacto</h2>
+            <p><strong>Email:</strong> jose.lozano2487@alumnos.udg.mx</p>
+            <p> oswaldo.ruiz2380@alumnos.udg.mx</p>
+            
+            <p><strong>Tel</strong> 3311967056</p>
+            <p><strong>Tel</strong> 3337178276</p>
+            
+    </div>
+
+    </header>
+    <section class="informacion">
+        <h1>¿Que es tener una buena alimentacion?</h1>
+        <p>Tener una buena alimentación significa consumir una dieta equilibrada que aporte los nutrientes esenciales para el correcto funcionamiento del cuerpo</p>
+    </section>
+    <div class="PrimerImagen">
+        <img src="../img/imagen1.jpg" alt="">
+    </div>
+
+
+         <div class="texto">
+            <h1>Varios Platillos</h1>
+         </div>
+
+    <section class="divisionInfo">
+        <div class="card">
+            <img src="../img/proteinas.jpg" alt="Imagen de ejemplo">
+            <div class="card-content">
+              <h3>PROTEINAS</h3>
+              <p>Las proteinas son los nutrientes que desempeñan un mayor numero de funciones en las celulas de todos los seres vivos.
+                 Forman parte de la estructura de los tejidos y por otro lado tienen funcion metabolica y reguladora</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="../img/bajas calorias.jpg" alt="Imagen de ejemplo">
+            <div class="card-content">
+              <h3>BAJO EN CALORIAS</h3>
+              <p>Tener el tiempo justo o no ser experta en la cocina no tiene por que ser sinonimo de "Fast Food" y otras tentaciones 
+                cargadas de calorias, sobre todo si tu objetivo es bajar de peso</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="../img/equilibrados.jpg" alt="Imagen de ejemplo">
+            <div class="card-content">
+              <h3>EQUILIBRADOS</h3>
+              <p>Comer Platillos valanceados y con la suficiente energia para </p>
+            </div>
+          </div>
+    </section>
+
+    <div class="chat-container">
+        <div id="mensajes"></div>
+        <div class="chat-input">
+            <input type="text" id="mensaje" placeholder="Escribe tu mensaje..." onkeydown="if(event.key === 'Enter') enviarMensaje()" />
+            <button onclick="enviarMensaje()">Enviar</button>
+        </div>
+    </div>
+
+
+
+    <div class="carousel-container">
+        <button class="nav-button left-btn" onclick="moveCarousel(-1)">◀</button>
+    
+        <div class="carousel" id="carousel">
+          <img src="../img/huevos con espinaca.jpg" 
+               alt="Huevos con espinaca" 
+               data-info="🥚 Huevos con espinaca: Alto en proteína, bajo en calorías.">
+    
+          <img src="../img/ensalada-de-garbanzos.jpg" 
+               alt="Ensalada de garbanzos" 
+               data-info="🥗 Ensalada de garbanzos: Rica en proteína vegetal.">
+    
+          <img src="../img/atun con aguacate.jpeg" 
+               alt="Atún con aguacate" 
+               data-info="🐟 Atún con aguacate: Proteínas + grasas buenas.">
+    
+          <img src="../img/tortija de lenteja.jpeg" 
+               alt="Tortitas de lenteja" 
+               data-info="🌱 Tortitas de lenteja: Proteína vegetal y muy económicas. ">
+    
+          <img src="../img/pollo con verduras.jpg" 
+               alt="Pollo con verduras" 
+               data-info="🍗 Pollo con verduras: Proteína magra + vitaminas.">
+    
+          <img src="../img/tacos de npal con queso.jpeg" 
+               alt="Tacos de nopal con queso" 
+               data-info="🌮 Tacos de nopal y queso: Proteína, fibra, bajos en calorías.">
+        </div>
+    
+        <button class="nav-button right-btn" onclick="moveCarousel(1)">▶</button>
+    
+        <div class="info-box" id="infoBox"></div>
+      </div>
+
+      <div class="contenido-receta">
+        <div class="ingredients-box" id="ingredientsBox"></div>
+        <div class="preparacion-box" id="preparacionBox"></div>
+      </div>
+      
+
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h3>Sobre Nosotros</h3>
+            <p>Proyecto de Alimentación Nutritiva desarrollado por estudiantes UDG.</p>
+          </div>
+      
+          <div class="footer-section links">
+            <h3>Enlaces</h3>
+            <ul>
+              <li><a href="file:///C:/Users/josel/OneDrive/Escritorio/Proyecto%20de%20Graficos/opcion1/index.html">Inicio</a></li>
+              <li><a href="file:///C:/Users/josel/OneDrive/Escritorio/Proyecto%20de%20Graficos/Servicios/index.html">Servicios</a></li>
+              <li><a href="file:///C:/Users/josel/OneDrive/Escritorio/Proyecto%20de%20Graficos/Calculadora/index.html">Calculadora</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section contacto">
+            <h3>Contacto</h3>
+            <p>Email: jose.lozano2487@alumnos.udg.mx</p>
+            <p>Tel: (33) 11424145</p>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          &copy; 2025 Alimentación Nutritiva | Todos los derechos reservados.
+        </div>
+      </footer>
+      
+</body>
+</html>
