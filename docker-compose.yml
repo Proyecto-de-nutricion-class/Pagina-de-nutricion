@@ -1,0 +1,29 @@
+# Contenido de docker-compose.yml
+version: '3.8'
+
+services:
+  # 1. SERVICIO DE LA APLICACIÓN (FastAPI)
+  app:
+    build: . 
+    container_name: medical_history_app
+    ports:
+      - "8000:8000" 
+    depends_on:
+      - mongo 
+    environment:
+      # Variable de entorno para la URI de conexión
+      MONGO_URI: mongodb://mongo:27017/medical_db
+      
+  # 2. SERVICIO DE LA BASE DE DATOS (MongoDB)
+  mongo:
+    image: mongo:latest 
+    container_name: medical_history_mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      # Persistencia de datos
+      - mongo_data:/data/db 
+
+# Definición del volumen persistente
+volumes:
+  mongo_data:

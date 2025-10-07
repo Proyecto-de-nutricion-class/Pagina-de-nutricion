@@ -1,0 +1,14 @@
+# Contenido de .gitignore
+# Entorno virtual de Python
+venv/
+.venv/
+
+# Archivos compilados de Python
+__pycache__/
+*.pyc
+
+# Directorios de Docker (persistencia de MongoDB)
+mongo_data/
+
+# Logs y otros archivos temporales
+*.log
